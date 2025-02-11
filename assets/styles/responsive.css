@@ -1,0 +1,217 @@
+@media (max-width: 1399.98px) { 
+    
+}
+
+@media (max-width: 1199.98px) { 
+    .home__img{
+        width: 38rem;
+        height: 38rem;
+    }
+}
+ 
+@media (max-width: 991.98px) { 
+    .app-logo{
+        font-size: 5rem;
+    }
+    .menu__link{
+        padding-left: 1.7rem;
+    }
+    .home{
+        margin-top: 5rem;
+        height: 85rem;
+    }
+    .home .row{
+        flex-direction: column-reverse;
+    }
+    .home__content{
+        text-align: center;
+        padding: 0;
+    }
+    .home__content-links{
+        justify-content: center;
+    }
+    .home__banner{
+        margin-bottom: 0;
+    }
+    .home__img{
+        width: 35rem;
+        height: 35rem;
+    }
+    .resume__list{
+        background-color: transparent;
+        box-shadow: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: auto;
+        padding: 0;
+        margin: 0;
+        gap: .5rem;
+    }
+    .resume__list::before{
+        content: none;
+    }
+    .resume__list-item{
+        padding: 1.3rem 2rem;
+        border-radius: 3rem;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        transition: all .2s ease-in-out;
+    }
+    .resume__list-item::before{
+        content: none;
+    }
+    .resume__list-item--active{
+       background-color: var(--primary-color);
+    }
+    .resume-list__icon{
+       display: none;
+    }
+
+    .contactus__location{
+        display: none;
+    }
+    .contact__form{
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 767.98px) { 
+    .menu{
+        width: 100%;
+        background-color: var(--section-bg-color);
+        margin: 0;
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        overflow: hidden;
+        transition: all .12s ease-in;
+        gap: 2rem;
+    }
+    .menu__link{
+        padding:0;
+    }
+    .menu--open{
+        height: 30rem;
+    }
+    .nav__toggle-icon{
+        display: flex;
+    }
+    .cover{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .10);
+        transition: all .12s ease-in ;
+        z-index: -1;
+        opacity: 0;
+
+    }
+    .cover--show{
+        z-index: 99;
+        opacity: 1;
+    }
+    .footer__wrapper{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    *{
+        cursor: default !important;
+    }
+    .home__content-text{
+        font-size: 2.3rem;
+    }
+    .home__content-title{
+        font-size: 4rem;
+    }
+    .home__img{
+        width: 30rem;
+        height: 30rem;
+        border-width: 1.3rem;
+    }
+    .services__box-shape{
+        display: none;
+    }
+}
+
+@media (max-width: 410px){
+    
+    .home{
+        height: 92rem;
+    }
+    .home__content-text{
+        font-size: 2rem;
+    }
+    .home__content-title{
+        font-size: 3rem;
+    }
+    .home__content-links{
+        padding: 2rem;
+    }
+    .home__content-links,.aboutus__content-links{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .home__content-link,.aboutus__content-link{
+        flex-grow: 1;
+    }
+    .aboutus__wrapper-content{
+        padding: 2.5rem 2rem;
+    }
+    .footer__copyright{
+        letter-spacing: 0;
+        font-size: 1.4rem;
+    }
+    .footer__social{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .footer__social-icon{
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+}
+
+@media (max-width: 368px){
+    .app-logo{
+        font-size: 4rem;
+    }
+    .nav__toggle-icon,.nav__toggle-line::after, .nav__toggle-line::before{
+        width: 4rem;
+    }
+    .home{
+        background-image: none;
+        height: auto;
+    }
+    .home__img{
+        border-width: .5rem;
+    }
+    .aboutus__list-item{
+        font-size: 1.4rem;
+    }
+    .resume__content{
+        padding-left: 0;
+        border-left: none;
+    }
+    .resume__item-title::before{
+        content: none;
+    }
+    .contact__form-title{
+        font-size: 2.5rem;
+    }
+    .contact__input::placeholder{
+        font-size: 1.4rem;
+    }
+
+}
